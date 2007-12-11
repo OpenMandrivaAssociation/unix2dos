@@ -12,7 +12,7 @@ Source0:	http://ftp.topnz.ac.nz/FTP/Linux/%{name}-2.2.src.tar.bz2
 Patch0:		%{name}-mkstemp.patch
 Patch1:		%{name}-%{version}-segfault.patch
 Patch2:		%{name}-%{version}-manpage.patch
-URL:		http://www.mandrakesoft.com
+URL:		http://www.mandriva.com
 BuildRoot:	%{_tmppath}/%{name}-root
 
 %description
