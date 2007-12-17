@@ -13,7 +13,6 @@ Patch0:		%{name}-mkstemp.patch
 Patch1:		%{name}-%{version}-segfault.patch
 Patch2:		%{name}-%{version}-manpage.patch
 URL:		http://www.mandriva.com
-BuildRoot:	%{_tmppath}/%{name}-root
 
 %description
 A utility that converts plain text files in UNIX format to DOS format.
