@@ -1,6 +1,6 @@
 %define name unix2dos 
 %define version 2.2
-%define release %mkrel 8
+%define release %mkrel 9
 
 Summary:	Unix2dos - UNIX to DOS text file format converter
 Name:		%{name}
@@ -21,7 +21,7 @@ A utility that converts plain text files in UNIX format to DOS format.
 %prep
 
 %setup -q -c
-%patch -p1 -b .sec
+%patch0 -p1 -b .sec
 %patch1 -p1 -b .segf
 %patch2 -p1 -b .man
 perl -pi -e "s,^#endif.*,#endif,g;s,^#else.*,#else,g" *.[ch]
