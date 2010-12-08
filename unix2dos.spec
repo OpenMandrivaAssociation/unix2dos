@@ -1,6 +1,6 @@
 %define name unix2dos 
 %define version 2.2
-%define release %mkrel 9
+%define release %mkrel 10
 
 Summary:	Unix2dos - UNIX to DOS text file format converter
 Name:		%{name}
