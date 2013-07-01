@@ -2,7 +2,7 @@
 %define version 2.2
 %define release %mkrel 10
 
-Summary:	Unix2dos - UNIX to DOS text file format converter
+Summary:	- UNIX to DOS text file format converter
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
