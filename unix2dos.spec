@@ -1,11 +1,7 @@
-%define name unix2dos 
-%define version 2.2
-%define release %mkrel 10
-
-Summary:	- UNIX to DOS text file format converter
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Summary:	UNIX to DOS text file format converter
+Name:		unix2dos
+Version:	2.2
+Release:	11
 License:	distributable
 Group:		Text tools 
 Source0:	http://ftp.topnz.ac.nz/FTP/Linux/%{name}-2.2.src.tar.bz2
@@ -13,7 +9,6 @@ Patch0:		%{name}-mkstemp.patch
 Patch1:		%{name}-%{version}-segfault.patch
 Patch2:		%{name}-%{version}-manpage.patch
 URL:		http://www.mandriva.com
-BuildRoot:	%{_tmppath}/%{name}-root
 
 %description
 A utility that converts plain text files in UNIX format to DOS format.
@@ -30,8 +25,6 @@ perl -pi -e "s,^#endif.*,#endif,g;s,^#else.*,#else,g" *.[ch]
 gcc %{optflags} -o %{name} unix2dos.c
 
 %install
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
-
 install -d %{buildroot}%{_bindir}
 install -d %{buildroot}%{_mandir}/man1
 
@@ -39,7 +32,6 @@ install -m755 %{name} %{buildroot}%{_bindir}
 install -m644 %{name}.1 %{buildroot}%{_mandir}/man1
 
 %clean
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,0755)
