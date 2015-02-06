@@ -1,7 +1,7 @@
 Summary:	UNIX to DOS text file format converter
 Name:		unix2dos
 Version:	2.2
-Release:	11
+Release:	12
 License:	distributable
 Group:		Text tools 
 Source0:	http://ftp.topnz.ac.nz/FTP/Linux/%{name}-2.2.src.tar.bz2
